@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:id="@+id/dialog_address"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter City"
+
+        android:id="@+id/dialog_city"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter State"
+        android:id="@+id/dialog_state"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pincode"
+        android:id="@+id/dialog_pincode"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/dialig_error"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/dialog_bt_add"
+        android:text="Save"/>
+</LinearLayout>

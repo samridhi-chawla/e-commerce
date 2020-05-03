@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="100dp"
+    android:scaleType="fitXY"
+    android:layout_weight="0.3"
+    android:id="@+id/cart_item_photo"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:id="@+id/cart_item_name"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:id="@+id/cart_item_sub_category"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:id="@+id/cart_item_mrp"
+            android:textSize="18dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:id="@+id/cart_item_qty"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_circle_black"
+                android:id="@+id/bt_add_qty"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_remove_circle_black"
+                android:id="@+id/bt_minus_qty"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:text="Delete"
+            android:id="@+id/cart_item_del"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:id="@+id/cart_item_tot"/>
+    </LinearLayout>
+</LinearLayout>
